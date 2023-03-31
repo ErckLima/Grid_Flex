@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+header{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.head_externa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+.head_inerna img{
+    
+    max-width: 70px;
+    
+}
+.head_inerna ul, li{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+.margin_direita{
+    border-right: 1px solid;
+    padding-right: 6px;
+}
+
+.head_externa2 ul, li{
+    display: flex;
+    padding: 2px;
+    flex-wrap: wrap;
+    
+    
+    
+}
+.head_externa2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.head_externa2 div{
+    margin: 5px;
+}
+.slider{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    /* position: absolute; */
+    border-radius: 10px;
+}
+
+.carrosel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.navegador{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.slides input{
+    display: none;
+}
+.btns{
+    border: 1px solid #080808;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.btns:not(:last-child){
+    margin-right: 10px;
+}
+.btns:hover{
+    background-color: red;
+    transition: 0.8s;
+}
+.slides{
+    display: flex;
+    width: 300%;
+    height: 100%;
+    
+}
+.slide{
+    width: 33,33%;
+    transition: 0.5s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#rd1:checked ~ .frist{
+    margin-left: 0;
+}
+#rd2:checked ~ .frist{
+    margin-left: -33.33%;
+}
+#rd3:checked ~ .frist{
+    margin-left: -66.66%;
+}
