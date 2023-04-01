@@ -18,7 +18,7 @@ header{
     top:0;
     left: 0;
     width: 100%;
-    height: 150px;
+    height: 100px;
     justify-content: space-between;
     align-items: center;
     align-self: center;
@@ -28,7 +28,7 @@ header{
 }
 .head_inerna img{
     
-    max-width: 150px;
+    max-width: 100px;
     border-radius: 20px;
     margin: 10px;
 }
@@ -79,7 +79,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 90px;
 }
  
 .navegador{
@@ -142,6 +142,11 @@ header{
 }
 .card_acai{
     margin: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px;
+    
+
 }
 .acai{
     background-color: rgb(134, 0, 146);
@@ -149,8 +154,11 @@ header{
     height: 100px;  
     /* padding: 10px;
     margin: 10px; */
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     box-shadow: 0px 0px 50px rgb(255, 255, 255);
+    text-align: center;
+    justify-content:end;
+
 }
 .conteiner_acais{
     display: flex;
@@ -160,10 +168,11 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: end;
 
 }
 .acai{
-    padding: 5px;
+    padding-top: 10px;
     color: #fff;
 }
 .acai p{
@@ -204,7 +213,7 @@ header{
 
     }
     .acai{
-        min-height: 50%;
+        min-height: 100%;
         max-width: 80vw;
         margin: auto;
         border-radius: 10px;
@@ -212,9 +221,14 @@ header{
         display: flex;
         flex-direction: column;
     }
+    .acai h1{
+        color: black;
+        background-color: rgb(0, 0, 255);
+    }
     .card_acai{
         margin: 0px;
         min-width: 100vw;
+        min-height: 300px;
         box-shadow: 0px 0px 10px black;
         border-radius: 10px;
         border: 1px solid black;
@@ -238,7 +252,11 @@ header{
         left: 0;
     }
     .geral{
+        flex-wrap: wrap;
+        justify-content: space-around;
         max-width: 100px;
+        align-items: end;
+        
     }
     
 }
