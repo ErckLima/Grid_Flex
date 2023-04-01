@@ -1,8 +1,11 @@
 body{
+    background-image: linear-gradient(to bottom, black, rgba(25, 0, 255, 0.534));
     margin: 0;
     padding: 0;
     display: grid;
     grid-template-rows: auto auto auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
 }
 
 header{
@@ -11,23 +14,38 @@ header{
 }
 .head_externa{
     display: flex;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 150px;
     justify-content: space-between;
     align-items: center;
     align-self: center;
+    background-image: linear-gradient(to bottom right, rgb(5, 5, 7), rgb(32, 2, 102));
+    color: #fff;
+    box-shadow: -1px 10px 20px black;
 }
 .head_inerna img{
     
-    max-width: 70px;
-    
+    max-width: 150px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.head_inerna a{
+    text-decoration: none;
+    color: #fff;
 }
 .head_inerna ul, li{
     list-style: none;
     display: flex;
     padding: 10px;
+    margin-right: 10px;
 }
-.margin_direita{
-    border-right: 1px solid;
-    padding-right: 6px;
+.head_inerna li:not(:last-child){
+    margin-right: 20px;
+    
+
 }
 
 .head_externa2 ul, li{
@@ -48,17 +66,20 @@ header{
     margin: 5px;
 }
 .slider{
-    width: 300px;
-    height: 300px;
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
     overflow: hidden;
     /* position: absolute; */
-    border-radius: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px #fff;
 }
 
 .carrosel{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
 }
  
 .navegador{
@@ -73,17 +94,18 @@ header{
     display: none;
 }
 .btns{
-    border: 1px solid #080808;
+    border: 1px solid #ffffff;
     padding: 10px;
     border-radius: 20px;
     cursor: pointer;
+    
 
 }
 .btns:not(:last-child){
     margin-right: 10px;
 }
 .btns:hover{
-    background-color: red;
+    background-color: rgb(255, 0, 212);
     transition: 0.8s;
 }
 .slides{
@@ -108,4 +130,115 @@ header{
 }
 #rd3:checked ~ .frist{
     margin-left: -66.66%;
+}
+.conteiner_acais{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+}
+.card_acai{
+    margin: 50px;
+}
+.acai{
+    background-color: rgb(134, 0, 146);
+    width: 100%;  
+    height: 100px;  
+    /* padding: 10px;
+    margin: 10px; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+}
+.conteiner_acais{
+    display: flex;
+    
+}
+.geral{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.acai{
+    padding: 5px;
+    color: #fff;
+}
+.acai p{
+    font-size: 20px;
+}
+.valor{
+    color: rgb(155, 155, 155);
+    font-size: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .head_inerna ul{
+        display: inline-block;
+    }
+    .head_inerna1 ul{
+        display: inline-block;
+    }
+    .head_inerna img{
+        max-width: 100px;
+        
+    }
+    .carrosel{
+        margin-top: 150px;
+        
+    }
+    .conteiner_acais{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+
+    }
+    .acai{
+        min-height: 50%;
+        max-width: 80vw;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 8px 6px 10px black;
+        display: flex;
+        flex-direction: column;
+    }
+    .card_acai{
+        margin: 0px;
+        min-width: 100vw;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: #fff;
+        margin: 50px;
+    }
+    .btns{
+        border: 1px solid #fff;
+    }
+    .slider{
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+        /* position: absolute; */
+        border-radius: 10px;
+    }
+    .head_externa{
+        height: 100px;
+        position: fixed;
+        top:0;
+        left: 0;
+    }
+    .geral{
+        max-width: 100px;
+    }
+    
 }
